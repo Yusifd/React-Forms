@@ -24,11 +24,11 @@ export default function Form() {
       <form className="form" onSubmit={handleSubmit}>
       <span>Ad:</span>
         <label>            
-            <input type='text' name='userName' placeholder='Adiniz daxil edin'/>
+            <input type='text' name='userName' placeholder='Adiniz daxil edin' required/>
         </label>
         <span>Soyad:</span>
         <label>
-            <input type='text' name='userSurname' placeholder='Soyadiniz daxil edin'/>
+            <input type='text' name='userSurname' placeholder='Soyadiniz daxil edin' required/>
         </label> 
         <span>Telefon nomresi:</span>   
       <PhoneInput country={'az'} 
@@ -41,11 +41,11 @@ export default function Form() {
       />   
       <span>Email:</span>
       <label>
-      <input type='email' name='userEmail'/>
+      <input type='email' name='userEmail' required/>
       </label>
       <span>Serh:</span>
       <label>
-			<input type='textarea' name='userBio' rows="3" cols="30"/>
+			<input type='textarea' name='userBio' rows="3" cols="30" />
 		</label><br/>
       <label>
         <button type='submit'>Submit</button>
